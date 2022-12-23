@@ -17,25 +17,24 @@ export default function Navbar() {
         setOpenDrawer(false)
     }
     function onSearch(value) {
-        
-    }   
+
+    }
     return (
         <>
             <nav className="menu-bar">
-                <div className="logo-container">
-                    <div className="logo-wrapper">
-                        <span className="logo-movie">Movie</span>
-                        <span className="logo-explorer">Explorer</span>
-                    </div>
-                    <Search placeholder="Search movie..." onSearch={onSearch} style={{ width: 300 }} />
+                <div className="logo-wrapper">
+                    <span className="logo-movie">Movie</span>
+                    <span className="logo-explorer">Explorer</span>
                 </div>
-
-                <AlignRightOutlined color="white" onClick={showDrawer} size={30} style={{color: "white"}} />
+                <Search placeholder="Search movie..." onSearch={onSearch} style={{ width: 300 }} />
+                <div className="menu-icon-container">
+                    <div className='menu-temp-expand'/>
+                <AlignRightOutlined onClick={showDrawer} style={{ color: "white", fontSize: 25 }} />
+                </div>
             </nav>
-            <Drawer title="Basic Drawer" placement="right" onClose={closeDrawer} open={openDrawer}>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
-                <p>Some contents...</p>
+            <Drawer title="Please login" placement="right" onClose={closeDrawer} open={openDrawer}>
+                <p>Login</p>
+                <p>Upcoming</p>
             </Drawer>
         </>
     )

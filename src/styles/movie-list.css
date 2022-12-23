@@ -1,0 +1,41 @@
+.spin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 20px 10vw;
+    background-color: #374151;
+}
+
+.ant-spin-dot-item {
+    background-color: white !important;
+}
+
+.movie-card-container {
+    padding: 20px 10vw;
+    background-color: #374151;
+}
+.movie-card-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 300px) {
+    .movie-card-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 700px) {
+    .movie-card-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1000px) {
+    .movie-card-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 1300px) {
+    .movie-card-grid { grid-template-columns: repeat(5, 1fr); }
+}
+
+@media (min-width: 1600px) {
+    .movie-card-grid { grid-template-columns: repeat(6, 1fr); }
+}

@@ -1,5 +1,9 @@
 const pkg = require('./package')
 
+require("dotenv").config({
+    path: "E:\\Git\\movie-explorer-kaist\\.env"
+})
+
 module.exports = {
     apiPath: 'stubs/api',
     webpackConfig: {
@@ -16,6 +20,6 @@ module.exports = {
         },
     },
     config: {
-        key: 'value'
+        apiKey: process.env.API_KEY
     }
 }
