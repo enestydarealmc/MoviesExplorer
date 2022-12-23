@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-
+import 'antd/dist/reset.css';
 import App from './app';
 
 export default () => <App/>;

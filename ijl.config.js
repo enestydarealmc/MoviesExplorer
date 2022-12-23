@@ -8,10 +8,10 @@ module.exports = {
         }
     },
     navigations: {
-        'movie-explorer-kaist.main': '/movie-explorer-kaist'
+        'movie_explorer.main': '/movie_explorer'
     },
     features: {
-        'movie-explorer-kaist': {
+        'movie_explorer': {
             // add your features here in the format [featureName]: { value: string }
         },
     },
