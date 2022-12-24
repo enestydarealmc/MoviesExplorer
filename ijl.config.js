@@ -18,6 +18,6 @@ module.exports = {
     },
   },
   config: {
-    apiKey: process.env.API_KEY,
+    apiKey: "71661be18f2fafefa4966ae143fa2251",
   },
 };
