@@ -1,0 +1,15 @@
+.back-home-button-container {
+}
+
+.back-home-button {
+    background-color: #374151;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}

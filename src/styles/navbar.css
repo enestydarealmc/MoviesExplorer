@@ -13,7 +13,7 @@
 .menu-icon-container {
     width: 100px;
     display: flex;
-    justify-conten: flex-end;
+    justify-content: flex-end;
 }
 
 .menu-temp-expand {
@@ -23,6 +23,8 @@
 .logo-wrapper {
     display: flex;
     width: 100px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .logo-movie {
@@ -36,4 +38,45 @@
     padding-left: 5px;
     color: #FF0000;
     font-size: 1.5em;
+}
+
+.search-bar-container {
+    width: 200px;
+    position: relative;
+    height: 30px;
+}
+
+@media (min-width: 300px) {
+    .search-bar-container { width: 200px; }
+}
+
+@media (min-width: 1000) {
+    .search-bar-container { width: 500px; }
+}
+
+@media (min-width: 1400px) {
+    .search-bar-container { width: 800px; }
+}
+
+.search-bar {
+    width: 100%;
+    height: 30px;
+}
+
+.search-bar-result-container {
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    height: 200px;
+    transition: opacity 0.25s ease-in-out;
+    padding-top: 20px;
+    overflow: scroll;
+}
+
+.search-spin-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

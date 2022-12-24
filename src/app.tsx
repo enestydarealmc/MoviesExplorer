@@ -1,24 +1,30 @@
-import React from 'react';
-import {
-    BrowserRouter,
-    Routes,
-    Route
-  } from 'react-router-dom';
-import Contact from './components/Contact';
-import MovieItem from './components/MovieItem';
-import HomePage from './containers/HomePage';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import MovieItem from "./components/MovieItem";
+import Navbar from "./components/Navbar";
+import NotFound404 from "./components/NotFound404";
+import HomePage from "./containers/HomePage";
 
 const App = () => {
-    return(
-        <BrowserRouter>
-      <Routes>
-        <Route path="/movie_explorer" element={<HomePage />} />
-        <Route path="/movie_explorer/contact" element={<Contact />} />
-        <Route path="/movie_explorer/contact/:id" element={<MovieItem />} />
-      </Routes>
-    </BrowserRouter>
-    )
-}
+  return (
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="*" element={<NotFound404 />} />
+          <Route path="/movie_explorer" element={<HomePage />} />
+          <Route path="/movie_explorer/contact" element={<Contact />} />
+          <Route
+            path="/movie_explorer/up_comming/:id"
+            element={<MovieItem />}
+          />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
+  );
+};
 
 export default App;
-

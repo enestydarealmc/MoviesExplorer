@@ -1,0 +1,14 @@
+.movie-item-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    height: 100vh;
+}
+
+.movie-item-wrapper {
+    width: 60vw;
+}
+
+.movie-item-image {
+    width: 100%;
+}
